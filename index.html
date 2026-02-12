@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PESQUISA DE OPINIÃO SOBRE A DISCIPLINA DE HISTÓRIA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>PESQUISA DE OPINIÃO SOBRE A DISCIPLINA DE HISTÓRIA</h1>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <form id="form" method="post" onsubmit="return validar(event)">
+                <fieldset>
+                    <legend>Dados de Identificação</legend>
+                    
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" placeholder="Seu nome  ...">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail Acadêmico</label>
+                        <input type="email" id="email" placeholder="Ex: jose@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" placeholder="(00) 00000-0000">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="matricula">Matrícula</label>
+                        <input type="number" id="matricula" min="20200000000000" max="20260000000000" placeholder="20200000000000">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="data">Data de Avaliação</label>
+                        <input type="date" id="data">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Experiência com a Disciplina</legend>
+
+                    <div class="form-group">
+                        <label for="pontoDeAgrado">Qual ponto mais te agrada?</label>
+                        <select id="pontoDeAgrado">
+                            <option value="explicação">Explicação</option>
+                            <option value="dinamica">Dinâmicas</option>
+                            <option value="exercicio">Exercícios</option>
+                            <option value="debate">Debates</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Onde você aplica os conhecimentos?</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox"> Vida pessoal</label>
+                            <label><input type="checkbox"> Acadêmico</label>
+                            <label><input type="checkbox"> Amigos</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="arquivo">Anexar Redação (PDF/Doc)</label>
+                        <input type="file" id="arquivo">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Informações Adicionais</legend>
+                    <div class="form-group comentarios">
+                        <label for="obs">Comentários</label>
+                        <textarea id="obs" rows="3" placeholder="Digite suas observações ..."></textarea>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="btn-submit">Enviar Avaliação</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
